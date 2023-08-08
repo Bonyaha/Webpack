@@ -4,7 +4,8 @@
 4. To inspect the bundled production version locally, navigate to the build directory and execute the command `npx static-server`.
 5. The `BACKEND_URL` variable in the `App.js` file is a global constant that receives a different value based on the environment it's being bundled for. This value is taken from the `webpack.config.js` file using the following configuration:
 
-  plugins: [
+   ```javascript
+   plugins: [
      new webpack.DefinePlugin({
        BACKEND_URL: JSON.stringify(backend_url)
      })
