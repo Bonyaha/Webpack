@@ -10,4 +10,3 @@
        BACKEND_URL: JSON.stringify(backend_url)
      })
    ]
-sds
